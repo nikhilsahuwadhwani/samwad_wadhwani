@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:samvad_wadhwani/views/ui/poster_screen.dart';
 
 import '../../utils/constants/textstyle.dart';
 
@@ -105,22 +103,6 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
             ),
             SizedBox(
               height: 25,
-            ),
-            Container(
-              width: 210,
-              height: 50,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      primary: Color(0xff223F81),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(45))),
-                  onPressed: () {
-                    Get.to(PosterScreen());
-                  },
-                  child: Text(
-                    "Log In",
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
-                  )),
             ),
             Spacer(),
             Container(
